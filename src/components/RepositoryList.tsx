@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
-import { RepositoryItem } from "./RepoositoryItem";
+import { RepositoryItem } from "./RepositoryItem";
 
 import "../styles/repositories.scss";
 
+interface Repository {
+  id: number;
+  name: string;
+  description: string;
+  html_url: string;
+}
+
 export function RepositoryList() {
   const API_URL = "https://api.github.com/users/hernanytec/repos";
-  const [repositories, setRepositories] = useState([]);
+
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   useEffect(() => {
     fetch(API_URL).then((response) =>
