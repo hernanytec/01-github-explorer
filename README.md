@@ -1,0 +1,21 @@
+# O que foi aprendido com esse projeto?
+- Configuração de um projeto React do zero
+    - babel
+    - webpack
+    - css-loader/sass-loader
+    - typescript
+- Webpack devServer
+- Source Maps
+- Configuração de .env (desenvolvimento e produção)
+- Componentização
+    - estilização
+    - props
+    - state
+    - imutabilidade
+    - react hooks
+        - useState
+        - useEffect
+    - consumo da API do github
+- Tipagem de componentes
+- Tipagem de propriedades
+- React devtools
